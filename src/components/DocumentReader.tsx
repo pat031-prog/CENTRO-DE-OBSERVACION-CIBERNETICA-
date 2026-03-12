@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Document } from "../data/documents";
+import { Link } from "lucide-react";
 
 interface DocumentReaderProps {
   document: Document;
@@ -9,7 +10,15 @@ interface DocumentReaderProps {
 export function DocumentReader({ document }: DocumentReaderProps) {
   const [decryptedText, setDecryptedText] = useState("");
   const [isDecrypting, setIsDecrypting] = useState(true);
+  const [copied, setCopied] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleCopyLink = () => {
+    const url = `${window.location.origin}${window.location.pathname}#${document.id}`;
+    navigator.clipboard.writeText(url);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   useEffect(() => {
     setIsDecrypting(true);
@@ -136,9 +145,19 @@ export function DocumentReader({ document }: DocumentReaderProps) {
         className="max-w-2xl mx-auto"
       >
         <div className="border-b border-neon-cyan/30 pb-4 mb-6 md:mb-8">
-          <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase mb-2">
-            {document.title}
-          </h1>
+          <div className="flex justify-between items-start mb-2">
+            <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase">
+              {document.title}
+            </h1>
+            <button
+              onClick={handleCopyLink}
+              className="flex items-center gap-2 px-3 py-1.5 text-xs font-mono border border-neon-cyan/30 bg-neon-cyan/5 hover:bg-neon-cyan/20 transition-colors text-neon-cyan rounded-sm"
+              title="Copiar enlace directo"
+            >
+              <Link size={14} />
+              {copied ? "COPIADO" : "LINK"}
+            </button>
+          </div>
           <div className="text-xs md:text-sm text-neon-cyan/70 mb-4">{document.subtitle}</div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-[10px] md:text-xs text-neon-cyan/50 font-mono bg-neon-cyan/5 p-3 border border-neon-cyan/20">

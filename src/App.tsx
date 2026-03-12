@@ -20,9 +20,31 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsBooting(false);
-      setActiveDocId("0x00");
+      const hash = window.location.hash.replace('#', '');
+      if (hash && documents.some(d => d.id === hash)) {
+        setActiveDocId(hash);
+      } else {
+        setActiveDocId("0x00");
+      }
     }, 2000);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (activeDocId && !isBooting) {
+      window.location.hash = activeDocId;
+    }
+  }, [activeDocId, isBooting]);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && documents.some(d => d.id === hash)) {
+        setActiveDocId(hash);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const handleCommand = (cmd: string) => {

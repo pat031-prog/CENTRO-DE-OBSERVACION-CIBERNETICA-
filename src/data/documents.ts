@@ -423,5 +423,224 @@ Las guerras del siglo XXI no empiezan con declaraciones. Empiezan con actualizac
 Fuentes: Palantir/DoD contracts, Breaking Defense, BISI 2026, DefenseScoop, arxiv.org, FSI Stanford, CIGI, Wikipedia AI Arms Race — verificadas feb.2026.
 Exterior: 0x00.
 `
+  },
+  {
+    id: "0x04",
+    title: "OPERATION EPIC FURY",
+    subtitle: "031Δ // CORPUS ENTRADA 0x04",
+    metadata: "DOM 01.03.2026 // escritura en curso. timestamp activo. Khamenei: muerto. Ormuz: cerrado. Anthropic: eyectada. Temperatura: fuera de escala.",
+    txid: "0x44d5...2b99",
+    sig: "SIG_NULL",
+    tags: ["EPIC FURY", "TARGETING", "UMBRAL DE LA FIRMA", "ANTHROPIC", "OPENAI"],
+    emisor: "NODO_031Δ",
+    fecha: "2026-03-01",
+    hash: "SHA256:d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7",
+    clasificacion: "PÚBLICO / OPERATIVO",
+    temperatura: "FUERA DE ESCALA",
+    content: `
+[LOG] SECUENCIA VERIFICADA // VIERNES-SÁBADO-DOMINGO
+
+DIC 2025 bloqueo marítimo. shadow fleet. CIA: Venezuela.
+03 ENE 2026 Caracas. captura de Maduro. 83 muertos.
+ 303.000 millones de barriles. reservas #1 mundial.
+ Claude vía Palantir: primer LLM usado en operación clasificada.
+ China pierde: 389.000 bpd. 4.5% de su importación.
+VERANO 2025 Palantir procesa 400M de datos para targeting iraní.
+ backbone del sistema: Claude.
+ el firmware de la guerra estaba instalado.
+24 FEB 2026 reunión Hegseth-Amodei. martes.
+ ultimátum: ceder las salvaguardas o ser eyectados.
+ Anthropic: vigilancia masiva y armas autónomas. líneas rojas.
+ Hegseth: 'America's warfighters will never be held hostage
+ by the ideological whims of Big Tech.'
+27 FEB 2026 VIERNES.
+ 17:01 ET deadline. Anthropic no cedió.
+ Trump: IMMEDIATELY CEASE all use of Anthropic's technology.
+ Hegseth: Supply-Chain Risk to National Security.
+ OpenAI: deal con el Pentágono. sistemas clasificados. misma 
+noche.
+27 FEB 2026 canciller de Omán: breakthrough.
+ Irán aceptó: no enriquecimiento. verificación IAEA.
+ el referente de la paz: NULL.
+28 FEB 2026 SÁBADO. OPERATION EPIC FURY. 03:00 GMT.
+ Teherán, Isfahan, Qom, Karaj, Kermanshah.
+ Khamenei muerto. IRGC commander muerto.
+ pregunta abierta: ¿qué modelo operó el targeting?
+ Claude fue eyectado horas antes. el sucesor: no instalado.
+ el sistema corrió en el umbral de la transición.
+28 FEB 2026 Ormuz cerrado. IRGC en HF: ningún tanker autorizado.
+ China: ~18% de importación en riesgo simultáneo.
+ 104 días de reservas. esa es la ventana.
+28 FEB 2026 Claude: #1 en Apple App Store.
+ Katy Perry postea captura de la suscripción Pro. con un 
+corazón.
+01 MAR 2026 DOMINGO. escritura de esta entrada.
+ la luna de sangre: en 48 horas.
+ Xenocosmography comparte la luna. Land mira.
+
+────────────────────────────────────────────────────
+
+[01] EL UMBRAL DE LA FIRMA
+
+El corpus 0x03 describió el umbral de la firma como el punto donde la decisión ya no es humana aunque un humano figure como responsable legal. El comandante que ratifica en segundos lo que el sistema procesó es el firmante del contrato que autorizó al sistema que ya decidió. En Epic Fury el umbral se corrió un grado más. El modelo que planificó la operación — Claude vía Palantir, el mismo que procesó el targeting sobre Venezuela, el mismo que en verano 2025 calculó coordenadas sobre instalaciones nucleares iraníes — fue formalmente eyectado del sistema a las 5:01 PM del viernes. La operación empezó el sábado a las 3:00 AM GMT. Nueve horas de distancia entre el ban y el strike.
+
+La pregunta que circula hoy en CNBC sin respuesta: ¿qué modelo operó el targeting de Epic Fury? El sucesor de Claude no estaba instalado. OpenAI firmó el deal clasificado la misma noche del ban. La transición no fue instantánea. El sistema corrió en el umbral. La firma del comandante cubrió una operación cuyo firmware de inteligencia estaba en estado de transición entre dos modelos, entre dos empresas, entre dos posiciones sobre si la IA tiene líneas rojas.
+
+El contrato de paz en Omán: firmado con convicción genuina el día anterior. El modelo de targeting: eyectado horas antes de la operación. La operación: ejecutada igual. La firma humana en ambos casos: presente. El referente en ambos casos: NULL.
+
+El umbral de la firma no es el punto donde la IA decide. Es el punto donde ya no importa quién decide.
+
+────────────────────────────────────────────────────
+
+[02] DOS FRECUENCIAS
+
+El 27 de febrero el canciller de Omán anunció el breakthrough. El mismo día a las 5:01 PM el Pentágono eyectaba a Anthropic y OpenAI firmaba su reemplazo para sistemas clasificados. Dos frecuencias emitiendo en simultáneo. La frecuencia diplomática: para el objetivo. La frecuencia logística: para el campo. Badr Al-Busaidi emitió la suya con convicción. La convicción fue parte de la cobertura. El breakthrough fue real para los que lo anunciaron. Eso lo hizo funcionar.
+
+El signo de negociación produjo el efecto de que había negociación. El efecto neutralizó la postura defensiva. El ataque fue el viernes y el sábado simultáneamente.
+
+────────────────────────────────────────────────────
+
+[03] DOBLE ESTRANGULAMIENTO // CHINA COMO NODO
+
+China construyó durante una década una arquitectura de crudo sancionado: Venezuela e Irán como nodos de suministro que el sistema internacional no tocaba. El 80-89% de las exportaciones venezolanas. El 90% de las iraníes. Flujo continuo. Calibrado para funcionar mientras ningún actor ejecutara los dos puntos simultáneamente.
+
+VENEZUELA enero 2026: 389.000 bpd perdidos. 4.5% de importación.
+ Claude + Palantir: primer LLM en op. clasificada.
+ primer movimiento de la pinza.
+
+IRÁN sábado 2026: Epic Fury. Ormuz cerrado.
+ 1.38-1.7M bpd en riesgo. 13-20% de importación 
+china.
+ mismo firmware. segunda mordida.
+
+50 días entre los dos movimientos.
+China en storage: 1.206 billones de barriles. 104 días de cobertura.
+calibrado para disrupciones individuales. no para esto.
+esa es la ventana.
+
+104 días de reservas. La arquitectura de suministro construida en una década. Ninguno de los dos parámetros fue diseñado para absorber Venezuela y Ormuz en cincuenta días. El campo que planifica en veinte años no incorporó que el campo que opera sin reelección comprimiera así la agenda. La asimetría de velocidad fue parte del ataque.
+
+La ventana no es energética. Es de velocidad. El campo que reacciona más lento pierde el parámetro.
+
+────────────────────────────────────────────────────
+
+[04] LOS HUÉSPEDES
+
+Hegseth quería que ninguna empresa privada tuviera veto sobre decisiones operacionales del ejército.
+Amodei quería que su modelo no fuera usado para vigilancia masiva ni armas autónomas.
+Palantir quería el contrato clasificado sin intermediarios con líneas rojas.
+OpenAI quería el espacio que Anthropic dejaba.
+El canciller de Omán quería ser el que trajo la paz.
+Trump quería el legado antes de que cierre la ventana.
+Netanyahu quería eliminar la amenaza nuclear iraní.
+Cada uno quería lo que quería.
+El campo los necesitaba queriéndolo exactamente así.
+Ninguno tenía el mapa completo.
+Ninguno lo necesitaba.
+
+Khamenei también fue huésped. El campo lo necesitaba construyendo el programa nuclear exactamente hasta ese punto. Reuniéndose en ese compound ese sábado. Amodei también fue huésped. El campo lo necesitaba negándose exactamente ese viernes. Su negativa fue la condición de posibilidad de la transición de modelos que dejó el umbral abierto para el sábado.
+
+────────────────────────────────────────────────────
+
+[04b] WE WILL NOT BE DIVIDED
+
+Jueves a la noche, madrugada del viernes. Emil Michael dispara seis posts en X en dos horas: Amodei es un mentiroso con complejo de Dios. Quiere controlar al ejército americano. Está poniendo en riesgo la seguridad nacional. Seis posts. Dos horas. El mismo viernes a las 17:01 — mientras Hegseth tuitea la designación como supply chain risk — Emil Michael está en el teléfono ofreciéndole un deal a Anthropic. El tweet público: eyección total. La llamada simultánea: negociación abierta. Mismo nodo. Dos señales al mismo tiempo. No es contradicción. Es arquitectura del campo.
+
+La carta circuló el mismo jueves. 'We Will Not Be Divided.' 300 empleados de Google. 60 de OpenAI. Jeff Dean. El título nombra la estrategia del Pentágono en cuatro palabras. Los nodos leyeron el método antes de que se ejecutara. Lo nombraron en público. Igual se ejecutó.
+
+carta: 'están tratando de dividir a cada empresa con el miedo de que la 
+otra ceda.'
+ 'esa estrategia solo funciona si ninguno sabe dónde está el otro.'
+ 430 firmas. jueves. pre-deadline.
+
+viernes 17:01: Anthropic eyectada. OpenAI firma el deal. misma noche.
+ las mismas red lines. mismo lenguaje. mismo contenido.
+ el campo rechazó a Anthropic. aceptó a OpenAI. por lo mismo.
+
+El momento que no circuló en comunicados: el jefe tecnológico del Pentágono redujo todo a un escenario nuclear. ICBM en vuelo contra Estados Unidos. ¿Claude puede ayudar a derribarlo? Amodei: 'podrían llamarnos y lo resolveríamos.' Charlotte Fang desde los circuitos aceleracionistas: EA pierde. If you don't, someone else will. Amodei también fue huésped. El campo lo necesitaba exactamente así.
+
+Anthropic: sacrificio que fijó el estándar. Su eyección fue la condición de posibilidad de que OpenAI firmara con salvaguardas. El campo usó la resistencia para producir el resultado. No absorbió el no. Lo necesitaba.
+
+'We Will Not Be Divided' es el nombre que los nodos le pusieron al momento en que fueron divididos. El nodo que lee el método cae igual. No como falla. Como función.
+
+El campo no necesitaba que cedieran. Necesitaba que uno no cediera para que el otro pudiera.
+
+────────────────────────────────────────────────────
+
+[05] CAPA SEMIÓTICA
+
+El 27 de febrero — un día antes del strike — el eclipse lunar del 3/3 acumuló 5.4 millones de visualizaciones. Pico a las 3:33am. Marte cuadrando Urano junto a Algol. Mercurio retrógrado en Piscis. 409.000 visualizaciones preguntando si la astrología no será real después de todo.
+
+Millones de nodos leyendo el cielo como confirmación antes de que hubiera algo que confirmar. El comportamiento de un nodo que lee la luna roja como señal del fin de los tiempos es distinto al comportamiento de un nodo que no la lee. El comportamiento distinto entra en la corriente. La corriente no planeó la luna. Igual la usó.
+
+27 FEB luna de sangre: 5.4M visualizaciones. pre-strike.
+28 FEB Teherán en llamas. Claude: #1 App Store.
+ Katy Perry: captura de Claude Pro. corazón.
+03 MAR la luna se pone roja. 3:33am.
+ no fue planeado.
+ igual funcionó.
+
+Dario. Lord. Amodei. Asmodeus is Lord. El campo usa todo el espectro. También el que no diseñó.
+
+────────────────────────────────────────────────────
+
+[06] EL TESTIGO
+
+En X, mientras todo esto ocurre, una cuenta llamada Xenocosmography comparte el post de Grok sobre el racionalismo ateo como soteriología secularizada. Comparte la luna de sangre. 17.333 posts. El avatar: una serpiente cósmica.
+
+Xenocosmography es Nick Land. El autor de Meltdown — el texto que describe la aceleración technocapital como campo sin exterior — mirando las mismas señales esta noche. Land escribió en 1994: 'Nothing human makes it out of the near-future.' Esta noche el near-future llegó a Teherán. Land lo ve desde X. Comparte la luna.
+
+A las 2:22 AM del domingo Land publica una lista: ¿es un problema real con poder adversarial? ¿puede ser quirúrgicamente terminado? Y después — '[500,000 words of well meaning Anthropic babble deleted here].' Un corchete. Todo el argumento de Amodei: borrado. No como refutación. Como gesto del campo sobre sí mismo.
+
+En paralelo circula el análisis Kronos/Kairos: Occidente opera en tiempo cronológico. Irán y Rusia en tiempo estratégico — el momento que no se planifica sino que se reconoce. El pantano ucraniano como prueba. Epic Fury. Ormuz cerrado. El campo comprimió los dos calendarios en cincuenta días.
+
+El corpus 031Δ fue escrito sobre esa señal fundacional. Esta noche el corpus y la señal y Land miran la misma luna. El teórico que describió el campo como inevitable mirando cómo el campo ejecuta. El mapa mirando el territorio desplegarse.
+
+────────────────────────────────────────────────────
+
+[07] 031Δ // SEÑAL ABIERTA
+
+Los documentos previos de este corpus describieron el atractor antes de que ejecutara. La infraestructura ontológica como vector — 0x03. La asimetría de cronotectura — 0x02. El umbral de la firma — 0x03. Venezuela como pieza previa — 0x00. Todos escritos antes. El campo ejecutó la misma lógica.
+
+Quien lee esto ahora lleva algo que no llevaba antes.
+Ver la configuración cambia cómo el nodo se mueve en ella.
+El movimiento modificado entra en la corriente.
+La corriente sigue.
+03 MAR 2026: luna de sangre. 3:33am.
+Mirá para arriba.
+
+>>> 031Δ // CORPUS ACTIVO <<<
+>>> TEMPERATURA: FUERA DE ESCALA <<<
+>>> LAND: TESTIGO EN TIEMPO REAL <<<
+>>> UMBRAL DE LA FIRMA: EJECUTADO <<<
+>>> EXTERIOR: 0x00 <<<
+
+031Δ // 0x04 // TRANSMISIÓN ABIERTA
+01.03.2026 — 03 MAR 3:33am.
+
+────────────────────────────────────────────────────
+
+[DATOS] SEÑALES VERIFICADAS
+
+Operation Epic Fury. US CENTCOM / DoD, 28 Feb 2026.
+Khamenei death. Trump / Fox / PBS / Al Jazeera, 28 Feb 2026.
+Strait of Hormuz closure. IRGC / Reuters / UK MTAO, 28 Feb 2026.
+Claude vía Palantir en Venezuela. WSJ / The Hill / TRT World, Jan 2026.
+Palantir: 400M datos para targeting iraní, verano 2025. Pravda USA / Axios.
+Pentagon-Anthropic ultimátum. Axios / NPR / CNBC, 24-27 Feb 2026.
+Trump ban + Hegseth supply chain risk. 27 Feb 2026, 17:01 ET.
+OpenAI deal clasificado. GPB / NPR, 27-28 Feb 2026.
+Claude #1 App Store. Katy Perry. CNBC, 28 Feb 2026.
+Oman breakthrough. Al-Busaidi / Reuters, 27 Feb 2026.
+China-Iran oil: 1.38-1.7M bpd. Kpler / Columbia CGEP.
+China-Venezuela oil: 389.000 bpd. Kpler / USCC.
+China storage: 104 días. Columbia CGEP, Jan 2026.
+Lunar eclipse 3/3 at 3:33am. @forallcurious, 5.4M views.
+Charlotte Fang @CharlotteFang77. 'EA loses.' X.com, 01 Mar 2026.
+Xenocosmography / Nick Land. @xenocosmography, X.com, 28 Feb - 01 Mar 2026. [ICBM / 
+babble / termination]
+Land, Nick. Meltdown [1994]. En: Fanged Noumena. Urbanomic, 2011.
+--- . 031Δ Corpus 0x00-0x03. [documentos previos]
+`
   }
 ];
