@@ -90,7 +90,7 @@ export default function App() {
           const doc = documents.find((d) => d.id === args[1]);
           if (doc) {
             newLogs.push(`MAPA DEL DOCUMENTO ${doc.id}:`);
-            const lines = doc.content.split("\\n");
+            const lines = doc.content.split("\n");
             const headings = lines.filter(line => line.trim().startsWith("[0"));
             if (headings.length > 0) {
               headings.forEach(h => newLogs.push(`  ${h.trim()}`));
