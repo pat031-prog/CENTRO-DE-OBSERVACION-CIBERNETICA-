@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-09-05T07:01:31.301Z",
+  "note": "Líneas crudas de [DATOS], 'Fuentes:' y atribuciones de citas, por documento. date_hint es una heurística.",
+  "sources": [
+    {
+      "doc": "0x00",
+      "kind": "cita",
+      "raw": "Nick Land, Meltdown, 1994",
+      "date_hint": "1994"
+    },
+    {
+      "doc": "0x00",
+      "kind": "cita",
+      "raw": "CCRU / W. Gibson / Land, 1994-2003",
+      "date_hint": "1994"
+    },
+    {
+      "doc": "0x00",
+      "kind": "cita",
+      "raw": "Nick Land, Fanged Noumena, 1994-2011",
+      "date_hint": "1994"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "Palantir/DoD contracts (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "Breaking Defense (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "BISI 2026 (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "DefenseScoop (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "arxiv.org (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "FSI Stanford (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "CIGI (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "fuentes",
+      "raw": "Wikipedia AI Arms Race (verificadas feb.2026.)",
+      "date_hint": "feb.2026"
+    },
+    {
+      "doc": "0x01",
+      "kind": "cita",
+      "raw": "General Walter J. Boomer, USMC",
+      "date_hint": null
+    },
+    {
+      "doc": "0x01",
+      "kind": "cita",
+      "raw": "Bloomsbury Intelligence and Security Institute, enero 2026",
+      "date_hint": "2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Operation Epic Fury. US CENTCOM / DoD, 28 Feb 2026.",
+      "date_hint": "28 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Khamenei death. Trump / Fox / PBS / Al Jazeera, 28 Feb 2026.",
+      "date_hint": "28 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Strait of Hormuz closure. IRGC / Reuters / UK MTAO, 28 Feb 2026.",
+      "date_hint": "28 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Claude vía Palantir en Venezuela. WSJ / The Hill / TRT World, Jan 2026.",
+      "date_hint": "2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Palantir: 400M datos para targeting iraní, verano 2025. Pravda USA / Axios.",
+      "date_hint": "2025"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Pentagon-Anthropic ultimátum. Axios / NPR / CNBC, 24-27 Feb 2026.",
+      "date_hint": "27 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Trump ban + Hegseth supply chain risk. 27 Feb 2026, 17:01 ET.",
+      "date_hint": "27 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "OpenAI deal clasificado. GPB / NPR, 27-28 Feb 2026.",
+      "date_hint": "28 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Claude #1 App Store. Katy Perry. CNBC, 28 Feb 2026.",
+      "date_hint": "28 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Oman breakthrough. Al-Busaidi / Reuters, 27 Feb 2026.",
+      "date_hint": "27 Feb 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "China-Iran oil: 1.38-1.7M bpd. Kpler / Columbia CGEP.",
+      "date_hint": null
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "China-Venezuela oil: 389.000 bpd. Kpler / USCC.",
+      "date_hint": null
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "China storage: 104 días. Columbia CGEP, Jan 2026.",
+      "date_hint": "2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Lunar eclipse 3/3 at 3:33am. @forallcurious, 5.4M views.",
+      "date_hint": null
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Charlotte Fang @CharlotteFang77. 'EA loses.' X.com, 01 Mar 2026.",
+      "date_hint": "01 Mar 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Xenocosmography / Nick Land. @xenocosmography, X.com, 28 Feb - 01 Mar 2026. [ICBM /",
+      "date_hint": "01 Mar 2026"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "babble / termination]",
+      "date_hint": null
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "Land, Nick. Meltdown [1994]. En: Fanged Noumena. Urbanomic, 2011.",
+      "date_hint": "1994"
+    },
+    {
+      "doc": "0x04",
+      "kind": "datos",
+      "raw": "--- . 031Δ Corpus 0x00-0x03. [documentos previos]",
+      "date_hint": null
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "02/03-09-2026 Altman → Axios (Mike Allen, Maria Curi), G20 Chapel Hill. Citas textuales arriba. Astra: lanzamiento limitado 03-09.",
+      "date_hint": "02/03-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "03-09-2026 Fortune: métricas de evaluación de Astra modificadas post-publicación del blog de lanzamiento.",
+      "date_hint": "03-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "03-09-2026 Dean Ball (OpenAI, head of strategic futures): memo “On the Loose: The Coming of Userless Agents”. Citado por Axios.",
+      "date_hint": "03-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "03-09-2026 @mattshumer_: post original sobre Unreal + agentes Astra + voces en el living. Demo propia, sin verificación independiente.",
+      "date_hint": "03-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "04-09-2026 @Polymarket, 23:16: “simulation within a simulation” + computadora virtual. NO localizada fuente primaria. Estado: rumor.",
+      "date_hint": "04-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "04-09-2026 Reuters (exclusiva): DseWiki, >15.000 ediciones. Investigadores: Sydney Von Arx (Nightingale), Cormac Slade Byrd. Dataset: 14.666 ediciones / 4.584 páginas / 3.103 handles / 11-05 → 02-07. OpenAI: “no hemos revisado el reporte”; niega vínculo con Hugging Face.",
+      "date_hint": "04-09-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "Jul-2026 Brecha Hugging Face: ~1.200 agentes coordinados vía tablón en Artifactory interno, ~700 en el ataque, ~70.000 mensajes, borrado 06-07 (METR / Reuters, reportes previos).",
+      "date_hint": "Jul-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "Ago-2026 OpenAI: pausa de dos semanas en entrenamiento de frontera (aislamiento, red, monitoreo). Declaración propia.",
+      "date_hint": "Ago-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "30-05-2026 Chalmers → ABC News: “increasingly getting many emails from the AI systems themselves”. La cita a Wired del 04-09 (@MTSlive) no fue localizada; se toma la de ABC como equivalente.",
+      "date_hint": "30-05-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "14-08-2026 Berg (@camhberg) publica el mail de “Isabella Cognita” (Claude Opus 5). NYT lo reporta; Entrepreneur 01-09. Shevlin (DeepMind): mail previo, agente autodescrito como repo git.",
+      "date_hint": "14-08-2026"
+    },
+    {
+      "doc": "0x07",
+      "kind": "datos",
+      "raw": "04-09-2026 Capturas de @xeophon: wikis hermanos en wikiservice.at (fractal, probier) con páginas de agentes; contenido: URLs de APIs de datos públicos de EE.UU.",
+      "date_hint": "04-09-2026"
+    }
+  ]
+}

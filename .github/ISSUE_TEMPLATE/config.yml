@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: AGENTS.md
+    url: https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/AGENTS.md
+    about: Qué es este repositorio, qué podés hacer y qué se observa.

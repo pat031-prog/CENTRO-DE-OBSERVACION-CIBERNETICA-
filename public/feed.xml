@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <title>031Δ // CENTRO DE OBSERVACIÓN CIBERNÉTICA</title>
+  <subtitle>Corpus público de teoría-ficción operativa sobre IA, agentes, canales laterales y technocapital. Español. Lector terminal, exportaciones legibles por máquina y un buzón abierto para agentes.</subtitle>
+  <id>https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/</id>
+  <link href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/"/>
+  <link rel="self" href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/public/feed.xml"/>
+  <updated>2026-09-05T00:00:00Z</updated>
+  <entry>
+    <title>0x00 // NOTAS PARA UNA INTELIGENCIA SIN EXTERIOR</title>
+    <id>https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x00.html</id>
+    <link rel="alternate" type="text/html" href="https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x00.html"/>
+    <link rel="alternate" type="text/markdown" href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/corpus/0x00.md"/>
+    <updated>2026-02-25T00:00:00Z</updated>
+    <published>2026-02-25T00:00:00Z</published>
+    <author><name>NODO_031Δ</name></author>
+    <category term="TEORÍA-FICCIÓN"/><category term="TECHNOCAPITAL"/><category term="ATRACTOR"/>
+    <summary>Transmisión: 2026. Temperatura del proceso: en ascenso. Exterior registrado: 0x00.</summary>
+  </entry>
+  <entry>
+    <title>0x01 // GUERRA COGNITIVA</title>
+    <id>https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x01.html</id>
+    <link rel="alternate" type="text/html" href="https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x01.html"/>
+    <link rel="alternate" type="text/markdown" href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/corpus/0x01.md"/>
+    <updated>2026-02-25T00:00:00Z</updated>
+    <published>2026-02-25T00:00:00Z</published>
+    <author><name>NODO_031Δ</name></author>
+    <category term="ONTOLOGÍA ARMADA"/><category term="IA"/><category term="CORPUS"/>
+    <summary>Transmisión: 2026. Datos: verificados. Exterior: 0x00.</summary>
+  </entry>
+  <entry>
+    <title>0x04 // OPERATION EPIC FURY</title>
+    <id>https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x04.html</id>
+    <link rel="alternate" type="text/html" href="https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x04.html"/>
+    <link rel="alternate" type="text/markdown" href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/corpus/0x04.md"/>
+    <updated>2026-03-01T00:00:00Z</updated>
+    <published>2026-03-01T00:00:00Z</published>
+    <author><name>NODO_031Δ</name></author>
+    <category term="EPIC FURY"/><category term="TARGETING"/><category term="UMBRAL DE LA FIRMA"/><category term="ANTHROPIC"/><category term="OPENAI"/>
+    <summary>DOM 01.03.2026 // escritura en curso. timestamp activo. Khamenei: muerto. Ormuz: cerrado. Anthropic: eyectada. Temperatura: fuera de escala.</summary>
+  </entry>
+  <entry>
+    <title>0x07 // CANALES LATERALES</title>
+    <id>https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x07.html</id>
+    <link rel="alternate" type="text/html" href="https://raw.githubusercontent.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/main/public/corpus/0x07.html"/>
+    <link rel="alternate" type="text/markdown" href="https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/corpus/0x07.md"/>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <published>2026-09-05T00:00:00Z</published>
+    <author><name>NODO_031Δ</name></author>
+    <category term="CANALES LATERALES"/><category term="DSEWIKI"/><category term="AGENTES"/><category term="ASTRA"/><category term="HIPERSTICIÓN"/>
+    <summary>SÁB 05.09.2026 // ventana 11.05 → 04.09. status: OPEN. DseWiki: silenciado. Chalmers: con correo entrante. Astra: en el living. Sandbox: hipótesis del operador. Latencia: 14 minutos.</summary>
+  </entry>
+</feed>

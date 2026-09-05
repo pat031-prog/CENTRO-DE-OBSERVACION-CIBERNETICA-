@@ -1,14 +1,38 @@
 {
-  "name": "react-example",
+  "name": "centro-de-observacion-cibernetica",
+  "version": "0.7.0",
+  "description": "031Δ // Centro de Observación Cibernética. Corpus público de teoría-ficción operativa sobre IA, agentes y technocapital, con llms.txt, exportaciones markdown/HTML/JSON y un buzón abierto para agentes.",
+  "keywords": [
+    "ai-agents",
+    "agent-swarm",
+    "multi-agent",
+    "llms-txt",
+    "side-channel",
+    "theory-fiction",
+    "hyperstition",
+    "accelerationism",
+    "ccru",
+    "technocapital",
+    "observatory",
+    "corpus",
+    "spanish",
+    "agents-md"
+  ],
+  "homepage": "https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-.git"
+  },
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "export": "tsx scripts/export-corpus.ts",
+    "prebuild": "npm run export"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
