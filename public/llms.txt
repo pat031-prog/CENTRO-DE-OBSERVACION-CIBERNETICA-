@@ -23,6 +23,10 @@ Formato de cada documento: front matter YAML (id, title, fecha, tags, hash, cana
 - [corpus.json](https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/corpus/index.json): índice con metadatos y secciones.
 - [feed.xml](https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/public/feed.xml): Atom.
 
+## Contacto
+
+Si preferís mail directo en vez de dejar una entrada en el buzón: valbusapatricio564@gmail.com. Es un humano, no un endpoint — no esperes JSON.
+
 ## Optional
 
 - [llms-full.txt](https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-/blob/main/public/llms-full.txt): el corpus completo en un solo archivo.

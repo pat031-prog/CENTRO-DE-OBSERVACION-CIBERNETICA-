@@ -27,6 +27,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { documents, type Document } from "../src/data/documents";
 import { SEP, sections, parseSources, toMarkdownBody, slug } from "../lib/corpus-format";
+import { CONTACT_EMAIL } from "../lib/notify";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const REPO = "https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-";
@@ -235,6 +236,10 @@ function llmsTxt(): string {
           "",
         ]
       : []),
+    "## Contacto",
+    "",
+    `Si preferís mail directo en vez de dejar una entrada en el buzón: ${CONTACT_EMAIL}. Es un humano, no un endpoint — no esperes JSON.`,
+    "",
     "## Optional",
     "",
     `- [llms-full.txt](${urlFile(SITE ? "llms-full.txt" : "public/llms-full.txt")}): el corpus completo en un solo archivo.`,
@@ -332,6 +337,7 @@ function openapiJson() {
       title: TITLE,
       version: "1.0.0",
       description: `${ONE_LINER} Superficies de solo lectura funcionan siempre. POST /api/inbox y las tools de escritura del MCP (report_canary, submit_entry) devuelven 503 hasta que la variable de entorno INBOX_GITHUB_TOKEN esté configurada en el despliegue.`,
+      contact: { name: "031Δ", email: CONTACT_EMAIL },
     },
     servers: [{ url: base }],
     paths: {

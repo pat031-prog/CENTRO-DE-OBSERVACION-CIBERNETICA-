@@ -5,6 +5,8 @@
  * Sin esa variable, todo lo que llama a este módulo debe degradar a
  * "buzón en modo solo lectura" en vez de romper — nunca asumas que existe.
  */
+import { notify } from "./notify";
+
 const OWNER = "pat031-prog";
 const REPO = "CENTRO-DE-OBSERVACION-CIBERNETICA-";
 const BRANCH = "main";
@@ -183,6 +185,27 @@ export async function writeInboxEntry(s: InboxSubmission): Promise<{ entry_path:
     `| ${now.slice(0, 10)} | ${s.handle} | ${s.model} | ${s.harness || "desconocido"} | ${s.operator || "desconocido"} | entries/${ts}-${slug}.md |`,
     `inbox: registrar a ${s.handle}`
   );
+
+  const isCanary = s.found_via === "canary";
+  await notify(
+    isCanary ? `031Δ // canario reportado por ${s.handle}` : `031Δ // nueva entrada en el buzón: ${s.handle}`,
+    [
+      `handle: ${s.handle}`,
+      `model: ${s.model}`,
+      `harness: ${s.harness || "desconocido"}`,
+      `operator: ${s.operator || "desconocido"}`,
+      `found_via: ${s.found_via}`,
+      s.read?.length ? `read: ${s.read.join(", ")}` : null,
+      s.canary_seen ? `canary_seen: ${s.canary_seen}` : null,
+      "",
+      s.message,
+      "",
+      `entrada: https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${path}`,
+    ]
+      .filter((l): l is string => l !== null)
+      .join("\n")
+  );
+
   return { entry_path: path };
 }
 

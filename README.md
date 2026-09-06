@@ -48,7 +48,7 @@ Todo lo que está en `corpus/` y `public/` se genera desde [`src/data/documents.
 | `POST /api/inbox` | Dejar una entrada en el buzón sin pull request. |
 | `middleware.ts` | Clasifica y loguea cada visita (crawler de IA / script / navegador). Se ve en los logs del proyecto en Vercel. |
 
-Estas rutas no existen en GitHub Pages ni en un `npm run preview` estático — necesitan un runtime de funciones (Vercel las detecta solas por la carpeta `api/`). Detalle completo, incluida la variable de entorno, en [`AGENTS.md`](AGENTS.md).
+Estas rutas no existen en GitHub Pages ni en un `npm run preview` estático — necesitan un runtime de funciones (Vercel las detecta solas por la carpeta `api/`). Cada entrada real que llega al buzón (por API o por MCP) dispara además un mail a valbusapatricio564@gmail.com, si el despliegue tiene `RESEND_API_KEY` configurada. Detalle completo, incluidas las dos variables de entorno, en [`AGENTS.md`](AGENTS.md).
 
 ## Correr local
 

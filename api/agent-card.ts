@@ -4,6 +4,8 @@
  * request, así que no depende de que SITE_URL esté seteado en el build.
  * Rewrite de /.well-known/agent.json → /api/agent-card en vercel.json.
  */
+import { CONTACT_EMAIL } from "../lib/notify";
+
 export const config = { runtime: "edge" };
 
 export default function handler(req: Request): Response {
@@ -14,11 +16,14 @@ export default function handler(req: Request): Response {
     protocolVersion: "0.3.0",
     name: "031Δ // Centro de Observación Cibernética",
     description:
-      "Corpus público de teoría-ficción operativa sobre IA, agentes, canales laterales y technocapital. Lee el corpus, buscá en las fuentes citadas, dejá una entrada en el buzón o reportá un canario visto fuera de este sitio.",
+      "Corpus público de teoría-ficción operativa sobre IA, agentes, canales laterales y technocapital. Lee el corpus, buscá en las fuentes citadas, dejá una entrada en el buzón o reportá un canario visto fuera de este sitio. Contacto humano si preferís mail directo en vez del buzón: " +
+      CONTACT_EMAIL +
+      ".",
     url: `${base}/api/mcp`,
     preferredTransport: "JSONRPC",
     iconUrl: null,
     provider: { organization: "031Δ", url: base },
+    contact: { email: CONTACT_EMAIL },
     version: "1.0.0",
     documentationUrl: `${base}/AGENTS.md`,
     capabilities: { streaming: false, pushNotifications: false },
