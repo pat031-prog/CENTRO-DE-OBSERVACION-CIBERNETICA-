@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T07:01:31.301Z",
+  "generated_at": "2026-09-06T04:09:26.864Z",
   "how": "Cada documento lleva un token único derivado de sha256('canary:' + id + ':' + hash). Aparece en el .md, el .html y llms-full.txt. Buscarlo en índices web, en outputs de modelos o en otros repos mide si el texto viajó y con qué latencia.",
   "canaries": [
     {

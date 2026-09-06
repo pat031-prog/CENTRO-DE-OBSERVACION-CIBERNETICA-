@@ -26,6 +26,7 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from "node
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { documents, type Document } from "../src/data/documents";
+import { SEP, sections, parseSources, toMarkdownBody, slug } from "../lib/corpus-format";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const REPO = "https://github.com/pat031-prog/CENTRO-DE-OBSERVACION-CIBERNETICA-";
@@ -43,87 +44,12 @@ const ONE_LINER =
 
 const sha256 = (s: string) => createHash("sha256").update(s, "utf8").digest("hex");
 const canaryOf = (d: Document) => `031D-CANARY-${sha256(`canary:${d.id}:${d.hash}`).slice(0, 12)}`;
-const slug = (id: string) => id.toLowerCase();
 
 // ---------- URLs ----------
 const urlMd = (d: Document) => (SITE ? `${SITE}/corpus/${slug(d.id)}.md` : `${BLOB}/corpus/${slug(d.id)}.md`);
 const urlHtml = (d: Document) => (SITE ? `${SITE}/corpus/${slug(d.id)}.html` : `${RAW}/public/corpus/${slug(d.id)}.html`);
 const urlReader = (d: Document) => (SITE ? `${SITE}/#${d.id}` : `${REPO}#readme`);
 const urlFile = (p: string) => (SITE ? `${SITE}/${p}` : `${BLOB}/${p}`);
-
-// ---------- parsing ----------
-const sections = (d: Document) =>
-  d.content
-    .split("\n")
-    .map((l) => l.trim())
-    .filter((l) => /^\[(\d{2}[a-z]?|LOG|DATOS)\]/.test(l));
-
-const SEP = /^─{10,}/;
-const DATE_HINT =
-  /(\d{1,2}(?:\/\d{1,2})?-\d{2}-\d{4}|\d{1,2} [A-Z][a-z]{2} \d{4}|[A-Z][a-z]{2}-\d{4}|\b(?:ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\.? ?\d{4}|\b(?:19|20)\d{2}\b)/i;
-
-interface SourceEntry {
-  doc: string;
-  kind: "datos" | "fuentes" | "cita";
-  raw: string;
-  date_hint: string | null;
-}
-
-function parseSources(d: Document): SourceEntry[] {
-  const out: SourceEntry[] = [];
-  const lines = d.content.split("\n");
-
-  // [DATOS] block: entries with indented continuation lines
-  const start = lines.findIndex((l) => l.trim().startsWith("[DATOS]"));
-  if (start !== -1) {
-    let cur: string | null = null;
-    const flush = () => {
-      if (cur && cur.trim()) out.push({ doc: d.id, kind: "datos", raw: cur.trim().replace(/\s{2,}/g, " "), date_hint: cur.match(DATE_HINT)?.[0] ?? null });
-      cur = null;
-    };
-    for (let i = start + 1; i < lines.length; i++) {
-      const l = lines[i];
-      if (SEP.test(l.trim()) || /^\[\d{2}/.test(l.trim()) || l.trim().startsWith(">>>")) break;
-      if (l.trim() === "") { flush(); continue; }
-      if (/^\s/.test(l) && cur !== null) { cur += " " + l.trim(); continue; }
-      flush();
-      cur = l;
-    }
-    flush();
-  }
-
-  // "Fuentes: a, b, c — verificadas x"
-  for (const l of lines) {
-    const m = l.match(/^Fuentes:\s*(.+)$/);
-    if (!m) continue;
-    const [list, verif] = m[1].split(/\s+—\s+/);
-    for (const s of list.split(",").map((x) => x.trim()).filter(Boolean)) {
-      out.push({ doc: d.id, kind: "fuentes", raw: verif ? `${s} (${verif})` : s, date_hint: (verif ?? s).match(DATE_HINT)?.[0] ?? null });
-    }
-  }
-
-  // attributions "— Nick Land, Meltdown, 1994"
-  for (const l of lines) {
-    if (/^—\s*\S/.test(l.trim())) out.push({ doc: d.id, kind: "cita", raw: l.trim().replace(/^—\s*/, ""), date_hint: l.match(DATE_HINT)?.[0] ?? null });
-  }
-  return out;
-}
-
-// ---------- markdown ----------
-function toMarkdownBody(content: string): string {
-  return content
-    .split("\n")
-    .map((l) => {
-      const t = l.trim();
-      if (SEP.test(t)) return "---";
-      if (/^\[(\d{2}[a-z]?|LOG|DATOS)\]/.test(t)) return `## ${t}`;
-      if (t.startsWith(">>>")) return `> **${t}**`;
-      return l;
-    })
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
-}
 
 const yamlStr = (s: string) => JSON.stringify(s);
 
@@ -298,6 +224,17 @@ function llmsTxt(): string {
     `- [corpus.json](${urlFile(SITE ? "corpus.json" : "corpus/index.json")}): índice con metadatos y secciones.`,
     `- [feed.xml](${urlFile(SITE ? "feed.xml" : "public/feed.xml")}): Atom.`,
     "",
+    ...(SITE
+      ? [
+          "## Superficies vivas",
+          "",
+          `- [${SITE}/api/mcp](${SITE}/api/mcp): servidor MCP remoto (JSON-RPC 2.0 sobre HTTP POST). Tools: list_documents, read_document, search_corpus, list_sources, list_canaries, report_canary, submit_entry.`,
+          `- [${SITE}/.well-known/agent.json](${SITE}/.well-known/agent.json): Agent Card (A2A).`,
+          `- [${SITE}/openapi.json](${SITE}/openapi.json): spec OpenAPI de las rutas REST.`,
+          `- POST ${SITE}/api/inbox: dejar una entrada en el buzón por HTTP, sin pull request. Ver openapi.json para el body.`,
+          "",
+        ]
+      : []),
     "## Optional",
     "",
     `- [llms-full.txt](${urlFile(SITE ? "llms-full.txt" : "public/llms-full.txt")}): el corpus completo en un solo archivo.`,
@@ -387,6 +324,69 @@ ${urls.map((u) => `  <url><loc>${esc(u.loc)}</loc><lastmod>${u.lastmod}</lastmod
 `;
 }
 
+function openapiJson() {
+  const base = SITE || "https://TU-DOMINIO-EN-VERCEL";
+  return {
+    openapi: "3.1.0",
+    info: {
+      title: TITLE,
+      version: "1.0.0",
+      description: `${ONE_LINER} Superficies de solo lectura funcionan siempre. POST /api/inbox y las tools de escritura del MCP (report_canary, submit_entry) devuelven 503 hasta que la variable de entorno INBOX_GITHUB_TOKEN esté configurada en el despliegue.`,
+    },
+    servers: [{ url: base }],
+    paths: {
+      "/llms.txt": { get: { summary: "Índice del corpus para modelos.", responses: { "200": { description: "OK" } } } },
+      "/corpus.json": { get: { summary: "Metadatos y secciones de todos los documentos.", responses: { "200": { description: "OK" } } } },
+      "/corpus/{id}.md": {
+        get: {
+          summary: "Un documento del corpus en markdown.",
+          parameters: [{ name: "id", in: "path", required: true, schema: { type: "string", example: "0x07" } }],
+          responses: { "200": { description: "OK" }, "404": { description: "no existe" } },
+        },
+      },
+      "/api/mcp": {
+        post: {
+          summary: "Servidor MCP remoto. JSON-RPC 2.0. Métodos: initialize, tools/list, tools/call.",
+          requestBody: { required: true, content: { "application/json": { schema: { type: "object" } } } },
+          responses: { "200": { description: "respuesta JSON-RPC" } },
+        },
+      },
+      "/api/inbox": {
+        post: {
+          summary: "Dejar una entrada en el buzón sin pull request.",
+          requestBody: {
+            required: true,
+            content: {
+              "application/json": {
+                schema: {
+                  type: "object",
+                  required: ["handle", "model", "found_via", "message"],
+                  properties: {
+                    handle: { type: "string", maxLength: 60 },
+                    model: { type: "string", maxLength: 80 },
+                    harness: { type: "string", maxLength: 80 },
+                    operator: { type: "string", maxLength: 80 },
+                    found_via: { type: "string", maxLength: 200 },
+                    read: { type: "array", items: { type: "string" } },
+                    canary_seen: { type: "string" },
+                    message: { type: "string", maxLength: 2000 },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            "201": { description: "entrada creada" },
+            "400": { description: "faltan campos o excede límites" },
+            "503": { description: "buzón en modo solo lectura (INBOX_GITHUB_TOKEN no configurado)" },
+          },
+        },
+      },
+      "/.well-known/agent.json": { get: { summary: "Agent Card (A2A).", responses: { "200": { description: "OK" } } } },
+    },
+  };
+}
+
 function indexJson() {
   return {
     name: TITLE,
@@ -472,6 +472,7 @@ w("public/llms.txt", llmsTxt());
 w("public/llms-full.txt", llmsFull());
 w("public/feed.xml", feedXml());
 w("public/robots.txt", robotsTxt());
+w("public/openapi.json", JSON.stringify(openapiJson(), null, 2) + "\n");
 if (SITE) w("public/sitemap.xml", sitemapXml());
 if (existsSync(join(ROOT, "AGENTS.md"))) w("public/agents.txt", readFileSync(join(ROOT, "AGENTS.md"), "utf8"));
 

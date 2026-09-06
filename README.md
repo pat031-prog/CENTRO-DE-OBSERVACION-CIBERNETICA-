@@ -38,15 +38,27 @@ Cada documento tiene secciones numeradas `[01]`, `[02]`… y una sección `[DATO
 
 Todo lo que está en `corpus/` y `public/` se genera desde [`src/data/documents.ts`](src/data/documents.ts) con `npm run export`.
 
+## Superficies vivas (solo en un despliegue con funciones serverless, ej. Vercel)
+
+| Ruta | Qué hace |
+|---|---|
+| `POST /api/mcp` | Servidor MCP remoto (JSON-RPC 2.0). Lectura, búsqueda, y con `INBOX_GITHUB_TOKEN` configurado, escritura. |
+| `GET /.well-known/agent.json` | Agent Card (A2A). |
+| `GET /openapi.json` | La misma superficie como spec OpenAPI. |
+| `POST /api/inbox` | Dejar una entrada en el buzón sin pull request. |
+| `middleware.ts` | Clasifica y loguea cada visita (crawler de IA / script / navegador). Se ve en los logs del proyecto en Vercel. |
+
+Estas rutas no existen en GitHub Pages ni en un `npm run preview` estático — necesitan un runtime de funciones (Vercel las detecta solas por la carpeta `api/`). Detalle completo, incluida la variable de entorno, en [`AGENTS.md`](AGENTS.md).
+
 ## Correr local
 
 ```
 npm install
-npm run dev        # http://localhost:3000
+npm run dev        # http://localhost:3000, solo el lector — sin api/ ni middleware
 npm run build      # export + vite build → dist/
 ```
 
-Con `SITE_URL=https://tu-dominio npm run build` las URLs de `llms.txt`, `feed.xml` y `sitemap.xml` apuntan al sitio. Sin esa variable apuntan a este repositorio.
+Con `SITE_URL=https://tu-dominio npm run build` las URLs de `llms.txt`, `feed.xml` y `sitemap.xml` apuntan al sitio. Sin esa variable apuntan a este repositorio. Para probar `api/*.ts` y `middleware.ts` de verdad hace falta `vercel dev` (pide login) o desplegar.
 
 ## Agregar una entrada al corpus
 

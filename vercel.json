@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/.well-known/agent.json", "destination": "/api/agent-card" }
+  ]
+}
